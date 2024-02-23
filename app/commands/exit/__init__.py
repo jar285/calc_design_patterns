@@ -1,5 +1,5 @@
 import sys
-from app import Command
+from app.commands import Command
 
 
 class ExitCommand(Command):

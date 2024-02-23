@@ -1,4 +1,4 @@
-from app import Command
+from app.commands import Command
 
 class GreetCommand(Command):
     def execute(self, **kwargs):
