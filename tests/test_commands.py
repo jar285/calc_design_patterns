@@ -1,8 +1,8 @@
 '''This file contains the tests for the commands in the app/commands directory.'''
 import pytest
 from app import App
-from app.commands.goodbye import GoodbyeCommand
-from app.commands.greet import GreetCommand
+from app.plugins.greet import GreetCommand
+from app.plugins.goodbye import GoodbyeCommand
 
 def test_greet_command(capfd):
     """Test that the GreetCommand outputs 'Hello, World!'."""
