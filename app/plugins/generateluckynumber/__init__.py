@@ -1,9 +1,8 @@
-# app/plugins/generate_lucky_numbers.py
-
-from app.commands import Command
+import logging
 import random
+from app.commands import Command
 
 class GenerateLuckyNumbersCommand(Command):
     def execute(self):
         lucky_numbers = [random.randint(1, 100) for _ in range(3)]
-        print(f"Your lucky numbers are: {lucky_numbers}")
+        logging.info(f"Your lucky numbers are: {lucky_numbers}")
